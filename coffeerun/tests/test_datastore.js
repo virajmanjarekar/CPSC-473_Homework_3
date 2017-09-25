@@ -1,5 +1,5 @@
-var window = require ('window');
-var App = window.App;
+
+var App = global.App;
 var ds = new App.DataStore();
 ds.add('m@bond.com', 'tea');
 ds.add('james@bond.com', 'eshpressho');

@@ -1,8 +1,8 @@
-var window = require ('window');
-(function(window) {
+
+(function(global) {
   'use strict';
 
-  var App = window.App || {};
+  var App = global.App || {};
 
   function Truck(truckId, db) {
     this.truckId = truckId;
@@ -24,5 +24,5 @@ var window = require ('window');
     }.bind(this));
   };
   App.Truck = Truck;
-  window.App = App;
-})(window);
+  global.App = App;
+})(global);

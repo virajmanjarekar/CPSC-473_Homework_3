@@ -1,7 +1,7 @@
-var window = require ('window');
-(function(window) {
+
+(function(global) {
   'use strict';
-  var App = window.App || {};
+  var App = global.App || {};
 
   function DataStore() {
 
@@ -22,5 +22,5 @@ DataStore.prototype.remove = function (key)
 };
 
   App.DataStore = DataStore;
-  window.App = App;
-})(window);
+  global.App = App;
+})(global);
