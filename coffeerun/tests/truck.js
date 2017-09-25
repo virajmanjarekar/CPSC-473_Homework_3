@@ -1,8 +1,8 @@
 
-(function(global) {
+(function(window) {
   'use strict';
 
-  var App = global.App || {};
+  var App = window.App || {};
 
   function Truck(truckId, db) {
     this.truckId = truckId;
@@ -24,5 +24,5 @@
     }.bind(this));
   };
   App.Truck = Truck;
-  global.App = App;
-})(global);
+  window.App = App;
+})(window);
